@@ -18,7 +18,7 @@ class OrderConsumer() {
     init {
         props.setProperty("bootstrap.servers", "localhost:9092")
         props["security.protocol"] = "SSL"
-        props["ssl.truststore.location"] = "C:\\Users\\daanr\\Documents\\repositorios_git\\kafka-ssl-kotlin\\kafka-creds\\client.truststore.jks"
+        props["ssl.truststore.location"] = ".\\kafka-creds\\client.truststore.jks"
         props["ssl.truststore.password"] = "123456"
         props.setProperty("group.id", "test")
         props.setProperty("enable.auto.commit", "true")

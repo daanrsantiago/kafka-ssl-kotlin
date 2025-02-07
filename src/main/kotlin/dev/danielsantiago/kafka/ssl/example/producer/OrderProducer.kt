@@ -14,7 +14,7 @@ class OrderProducer {
     init {
         props["bootstrap.servers"] = "localhost:9092"
         props["security.protocol"] = "SSL"
-        props["ssl.truststore.location"] = "C:\\Users\\daanr\\Documents\\repositorios_git\\kafka-ssl-kotlin\\kafka-creds\\client.truststore.jks"
+        props["ssl.truststore.location"] = ".\\kafka-creds\\client.truststore.jks"
         props["ssl.truststore.password"] = "123456"
         props["key.serializer"] = "org.apache.kafka.common.serialization.StringSerializer"
         props["value.serializer"] = "dev.danielsantiago.kafka.ssl.example.config.serializer.OrderSerializer"
